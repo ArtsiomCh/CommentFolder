@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.github.ArtsiomCh.CommentFolder</id>
   <name>CommentFolder</name>
-  <version>0.1.1</version>
+  <version>0.1.2</version>
   <vendor email="achapialiou@gmail.com" url="http://github.com/ArtsiomCh/CommentFolder">Artsiom Chapialiou</vendor>
 
   <description><![CDATA[
@@ -11,11 +11,27 @@
    line
    comments
    block
-*/</pre>
+*/</pre> <br>
+      Enable folding for multi-line array initializer block:<br>
+<pre>
+    int[] array = {
+            0,
+            1,
+            2,
+            3};
+</pre> <br>
+      Enable folding for multi-line String:<br>
+<pre>
+    String str =
+            "multi"
+            + "line "
+            + "String";
+</pre> <br>
     ]]></description>
 
   <change-notes><![CDATA[
-      0.1.1 - Enable folding everywhere for multi-line comments block (fix <a href="https://youtrack.jetbrains.com/issue/IDEA-212623">IDEA-212623</a>)
+      0.1.2 - Enable folding for multi-line array initializer blocks and multi-line Strings. <br>
+      0.1.1 - Enable folding everywhere for multi-line comments block (fix <a href="https://youtrack.jetbrains.com/issue/IDEA-212623">IDEA-212623</a>) <br>
       0.1.0 - Initial release: Enable folding for multi-line comments block (fix <a href="https://youtrack.jetbrains.com/issue/IDEA-106702">IDEA-106702</a>)
     ]]></change-notes>
 
