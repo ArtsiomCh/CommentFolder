@@ -10,6 +10,7 @@ import com.intellij.psi.JavaTokenType;
 import com.intellij.psi.PsiArrayInitializerExpression;
 import com.intellij.psi.PsiComment;
 import com.intellij.psi.PsiElement;
+import com.intellij.psi.PsiExpressionList;
 import com.intellij.psi.PsiPolyadicExpression;
 import com.intellij.psi.util.PsiTreeUtil;
 import org.jetbrains.annotations.NotNull;
@@ -26,6 +27,8 @@ public class BlockCommentFoldingBuilder implements FoldingBuilder {
             PsiComment.class,
             // multi-line array initializer
             PsiArrayInitializerExpression.class,
+            // multi-line arguments list (functions, etc.)
+            PsiExpressionList.class,
             // multi-line String
             PsiPolyadicExpression.class)
         .stream()

@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.github.ArtsiomCh.CommentFolder</id>
   <name>CommentFolder</name>
-  <version>0.1.2</version>
+  <version>0.1.3</version>
   <vendor email="achapialiou@gmail.com" url="http://github.com/ArtsiomCh/CommentFolder">Artsiom Chapialiou</vendor>
 
   <description><![CDATA[
@@ -27,16 +27,25 @@
             + "line "
             + "String";
 </pre> <br>
+      Enable folding for multi-line arguments list (functions, etc.):<br>
+<pre>
+    Collections.addAll(
+        collection,
+        "contains",
+        ...
+        "version_compare");
+</pre> <br>
     ]]></description>
 
   <change-notes><![CDATA[
+      0.1.3 - Enable folding for multi-line arguments list (functions, etc.). <br>
       0.1.2 - Enable folding for multi-line array initializer blocks and multi-line Strings. <br>
       0.1.1 - Enable folding everywhere for multi-line comments block (fix <a href="https://youtrack.jetbrains.com/issue/IDEA-212623">IDEA-212623</a>) <br>
       0.1.0 - Initial release: Enable folding for multi-line comments block (fix <a href="https://youtrack.jetbrains.com/issue/IDEA-106702">IDEA-106702</a>)
     ]]></change-notes>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="173.0" until-build="192.*"/>
+  <idea-version since-build="173.0" until-build="193.*"/>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->
